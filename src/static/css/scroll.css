@@ -1,0 +1,23 @@
+::-webkit-scrollbar-track-piece {
+    /* 滚动条背景 */
+    background: #E6E6E6;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条颜色*/
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    min-height: 28px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {}

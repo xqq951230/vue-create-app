@@ -1,0 +1,425 @@
+     /* 导航相关开始*/
+     
+     .el-menu {
+         border-right: none;
+         background: #fff !important;
+         overflow: hidden;
+     }
+     
+     .el-menu--vertical {
+         //  收起后子代
+         display: none;
+     }
+     
+     .el-submenu__title {
+         /*标题*/
+         height: 60px;
+         line-height: 60px;
+         font-size: 16px;
+         font-weight: bolder;
+         text-align: left;
+         border-right: 4px solid transparent;
+         transition: border-color 0.2s linear, background 0.2s linear;
+         -webkit-transition: border-color 0.2s linear, background 0.2s linear;
+         -moz-transition: border-color 0.2s linear, background 0.2s linear;
+         -ms-transition: border-color 0.2s linear, background 0.2s linear;
+         -o-transition: border-color 0.2s linear, background 0.2s linear;
+         img {
+             width: 24px;
+             height: 24px;
+             margin-right: 20px;
+         }
+     }
+     
+     .el-submenu__title:focus,
+     .el-submenu__title:hover {
+         /*标题伪类操作*/
+         background: #ffeeee !important;
+         border-right: 4px solid #DB2A26;
+     }
+     
+     .el-submenu.is-opened .el-submenu__title {
+         /*标题选中*/
+         background: #ffeeee !important;
+         border-right: 4px solid #DB2A26;
+     }
+     
+     .el-submenu__icon-arrow::before {
+         /* 展开图标 */
+         display: none;
+     }
+     
+     .el-submenu .el-menu-item {
+         /* 展开项 */
+         height: 40px;
+         line-height: 40px;
+         margin: 6px 0px;
+         text-align: left;
+         font-size: 16px;
+         font-weight: 500;
+         text-indent: 40px;
+         background: #fff !important;
+     }
+     
+     .el-menu-item.is-active {
+         color: #DB2A26;
+         background: #fdf5f5 !important;
+     }
+     /* 导航相关结束*/
+     /* table */
+     
+     body .el-table th.gutter {
+         display: table-cell !important;
+     }
+     /*  斑马纹表格背景 */
+     
+     .el-table--striped .el-table__body tr.el-table__row--striped td {
+         background: #fffbfb
+     }
+     /*表格空状态*/
+     
+     .el-table__empty-text {
+         line-height: 48px !important;
+     }
+     
+     .el-table__empty-block {
+         min-height: 48px;
+     }
+     
+     #app .childtable .el-table__body {
+         overflow: hidden;
+     }
+     
+     #app .el-pager li {
+         border-radius: 4px;
+         -webkit-border-radius: 4px;
+         -moz-border-radius: 4px;
+         -ms-border-radius: 4px;
+         -o-border-radius: 4px;
+     }
+     
+     #app .el-pager li.active {
+         background: #DB2A26;
+         color: #fff
+     }
+     
+     .el-pagination.is-background .el-pager li:not(.disabled):hover {
+         color: #DB2A26
+     }
+     /* 输入框 */
+     
+     .el-input__inner:focus,
+     .el-textarea__inner:focus {
+         border-color: #DB2A26 !important;
+     }
+     
+     .el-input.is-focus {
+         border-color: #DB2A26 !important;
+     }
+     
+     .el-input--small .el-input__inner,
+     .el-input__inner {
+         height: 36px;
+         line-height: 36px;
+         background: #fff;
+         padding: 0px 15px;
+         border-radius: 2px;
+         -webkit-border-radius: 2px;
+         -moz-border-radius: 2px;
+         -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+     }
+     
+     .el-range-editor.el-input__inner {
+         padding: 3px;
+     }
+     
+     .el-input--suffix .el-input__inner {
+         padding-right: 22px;
+     }
+     
+     .el-date-editor .el-range-separator {
+         line-height: 27px;
+     }
+     
+     .el-date-editor .el-range__icon {
+         line-height: 26px;
+     }
+     
+     //  年份
+     .el-date-editor.el-input,
+     .el-date-editor.el-input__inner {
+         width: 100% !important;
+     }
+     /*按钮*/
+     
+     .el-button {
+         padding: 0;
+         width: 74px;
+         height: 36px;
+         line-height: 36px;
+         border-radius: 2px;
+         -webkit-border-radius: 2px;
+         -moz-border-radius: 2px;
+         -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+     }
+     
+     .el-button.hong {
+         background-color: #DB2A26 !important;
+         border-color: #DB2A26 !important;
+         color: #fff !important;
+     }
+     
+     .el-button.lan {
+         background-color: #23BDCA;
+         border-color: #23BDCA;
+         color: #fff;
+     }
+     /*复选框*/
+     
+     .el-checkbox__input.is-disabled .el-checkbox__inner {
+         background: #fff;
+         border-color: #fff;
+     }
+     
+     .el-checkbox__input.is-checked .el-checkbox__inner,
+     .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+         background-color: #DB2A26;
+         border-color: #DB2A26;
+     }
+     
+     .el-checkbox__input.is-focus .el-checkbox__inner {
+         border-color: #DB2A26;
+     }
+     
+     .el-checkbox__inner:hover {
+         border-color: #DB2A26;
+     }
+     
+     .el-checkbox__input.is-checked+.el-checkbox__label {
+         color: #DB2A26;
+     }
+     /*单选按钮组*/
+     
+     .el-radio__inner:hover {
+         border-color: #DB2A26;
+     }
+     
+     .el-radio__input.is-checked .el-radio__inner {
+         background: #DB2A26;
+         background-color: #DB2A26;
+         border-color: #DB2A26;
+     }
+     
+     .el-radio__input.is-checked+.el-radio__label {
+         color: #DB2A26;
+     }
+     /*按钮组*/
+     
+     .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+         background-color: #DB2A26;
+         border-color: #DB2A26;
+         box-shadow: none;
+     }
+     
+     .el-radio-button__inner:hover {
+         color: #DB2A26;
+     }
+     /*TAB*/
+     
+     .is-top {
+         margin-top: 1px;
+     }
+     
+     .el-tabs__nav-scroll {
+         background: #fff;
+     }
+     
+     .el-tabs__item:hover {
+         color: #db2a26 !important;
+         background: #fdf5f5 !important;
+     }
+     
+     .el-tabs--card>.el-tabs__header .el-tabs__nav {
+         border: none;
+         border-radius: 0px;
+         -webkit-border-radius: 0px;
+         -moz-border-radius: 0px;
+         -ms-border-radius: 0px;
+         -o-border-radius: 0px;
+     }
+     
+     .el-tabs__item.is-top {
+         color: #666666;
+         font-size: 16px;
+         font-weight: 400;
+         border: 1px solid transparent !important;
+     }
+     
+     .el-tabs__item.is-top.is-active {
+         color: #db2a26 !important;
+         border: 1px solid #db2a26 !important;
+         background: #fdf5f5 !important;
+         font-size: 16px;
+         font-weight: 500;
+     }
+     /*tab卡片*/
+     
+     .el-tabs--border-card>.el-tabs__header .el-tabs__item+.el-tabs__item,
+     .el-tabs--border-card>.el-tabs__header .el-tabs__item:first-child {
+         margin-left: 1px;
+     }
+     
+     .el-tabs--border-card {
+         box-shadow: none;
+         border: none;
+     }
+     /*form 表单*/
+     
+     .el-form-item__label {
+         font-size: 16px;
+         font-weight: 400;
+     }
+     
+     .el-form-item {
+         margin-bottom: 18px;
+     }
+     /*select 下拉框*/
+     
+     .el-select-dropdown__item.selected {
+         color: #db2a26;
+     }
+     
+     .el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+         color: #db2a26;
+     }
+     
+     .el-select .el-input.is-focus .el-input__inner {
+         border-color: #db2a26;
+     }
+     
+     .el-scrollbar__bar.is-horizontal {
+         overflow-x: hidden;
+     }
+     
+     .el-select {
+         width: 100%;
+     }
+     /*时间选择器*/
+     
+     .el-month-table td.today .cell,
+     .el-year-table td.today .cell {
+         //  当前月 年
+         color: #db2a26;
+     }
+     
+     .el-month-table td .cell:hover {
+         color: #db2a26;
+     }
+     
+     .el-month-table td.current:not(.disabled) .cell,
+     .el-year-table td .cell:hover,
+     .el-year-table td.current:not(.disabled) .cell {
+         //选中年 月 鼠标悬浮
+         color: #db2a26;
+     }
+     
+     .el-month-table td.end-date .cell,
+     .el-month-table td.start-date .cell,
+     .el-date-table td.current:not(.disabled) span {
+         //选中范围
+         background-color: #db2a26;
+     }
+     
+     .el-month-table td.end-date .cell:hover,
+     .el-month-table td.start-date .cell:hover {
+         //选中范围
+         color: #fff;
+     }
+     /*组件弹性*/
+     
+     .el-range-editor.el-input__inner {
+         //时间范围选择器  两端对齐
+         justify-content: space-around;
+         .el-range-separator {
+             padding: 0;
+         }
+     }
+     /*组件弹性*/
+     /*选中日*/
+     
+     .el-date-table td.end-date span,
+     .el-date-table td.start-date span {
+         background-color: #db2a26;
+     }
+     
+     .el-date-table td.available:hover {
+         color: #db2a26;
+     }
+     
+     .el-date-table td.today span {
+         color: #db2a26;
+     }
+     /*选中日*/
+     
+     .el-range-editor.is-active,
+     .el-range-editor.is-active:hover {
+         //组件边框
+         border-color: #db2a26;
+     }
+     /*loading*/
+     
+     .el-loading-spinner i {
+         color: #db2a26;
+     }
+     
+     .el-loading-spinner .el-loading-text {
+         color: #db2a26;
+     }
+     /*messageBox弹窗*/
+     
+     .el-message-box__btns {
+         .el-button--primary:focus,
+         .el-button--primary:hover,
+         .el-button--primary {
+             background: #db2a26;
+             border-color: #db2a26;
+         }
+     }
+     /*dialog对话框*/
+     
+     .el-dialog__header {
+         background: #db2a26;
+         text-align: left;
+         position: relative;
+         padding: 8px 15px;
+         .el-dialog__title {
+             color: #fff !important;
+         }
+         .el-dialog__headerbtn {
+             top: 50%;
+             transform: translateY(-50%);
+             -webkit-transform: translateY(-50%);
+             -moz-transform: translateY(-50%);
+             -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+         }
+         .el-dialog__headerbtn .el-dialog__close {
+             color: #fff;
+         }
+     }
+     
+     .el-dialog--center .el-dialog__body {
+         padding-bottom: 0px;
+     }
+     /*switch*/
+     
+     .el-switch__core {
+         border-color: transparent !important;
+     }
+     
+     //  分页
+     .el-pagination.is-background .el-pager li:not(.disabled).active {
+         background: #E92829;
+     }
